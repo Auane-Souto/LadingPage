@@ -17,8 +17,8 @@
 
 body[data-theme="dark"] {
   --bg-color: #121212;
-  --text-color: #4caf50;
-  --primary-color: #81C784;
+  --text-color: #a3a7a3;
+  --primary-color: #121212;
 }
 
 body {
@@ -71,7 +71,7 @@ button#toggle-theme {
   }
 
   nav ul li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.5rem;
   }
@@ -79,7 +79,7 @@ button#toggle-theme {
   /* Hero */
 
   #hero {
-    background-color: #f4f4f4;
+    background-color: var(--bg-color);
     padding: 50px 20px;
     text-align: center;
   }
@@ -145,7 +145,7 @@ button#toggle-theme {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--bg-color);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 1.5rem;
@@ -186,7 +186,7 @@ button#toggle-theme {
   }
 
   #inscricao{
-  background-color: #f0f4f8;
+  background-color: var(--bg-color);
   padding: 3rem 1rem;
   text-align: center;
   }
@@ -195,7 +195,7 @@ button#toggle-theme {
     color: #4CAF50;
   }
 
-  /* Footer */
+  /* Form */
 
   form {
   display: flex;
@@ -206,15 +206,16 @@ button#toggle-theme {
 }
 
 input{
+  background-color: var(--bg-color);
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #4CAF50;
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
 
 input:focus {
-  border-color: #4CAF50;
+  border-color: #2cd673;
   outline: none;
 }
 
@@ -230,17 +231,21 @@ button {
 }
 
  button:hover {
-  background-color: #19a720;
+  background-color: #3cc240;
 }
 
+/* Footer */
+
 footer {
-  background-color: #4CAF50;
-  color: #000000;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   padding: 0.5rem 1rem;
   text-align: center;
   font-size: 0.9rem;
 
 }
+
+/* Media Queries */
 
 @media (max-width: 768px) {
   .container {

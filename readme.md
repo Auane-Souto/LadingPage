@@ -1,7 +1,5 @@
 # Landing Page
 
-![Badge de status](https://img.shields.io/badge/status-em%20desenvolvimento-green)
-
 ## 📖 Descrição
 A landing page oferece uma experiência bem estruturada e funcional.
 
